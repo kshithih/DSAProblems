@@ -10,14 +10,14 @@ class reverseArray {
             array[i] = scan.nextInt();
         }
         Solution s = new Solution();
-        s.reverseArray(array);
+        s.reverse(array);
         for (int val: array) {
             System.out.print(val + " ");
         }
     }
 }
 class Solution {
-    public void reverseArray(int arr[]) {
+    public void reverse(int arr[]) {
         int begin = 0;
         int end = arr.length - 1;
         while (begin < end) {

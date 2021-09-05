@@ -1,7 +1,7 @@
 import java.util.*;
 import java.lang.*;
 
-class Main {
+class reverseArray {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int number_of_elements = scan.nextInt();

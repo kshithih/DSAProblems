@@ -1,5 +1,5 @@
-package com.company;
-        import java.util.*;
+
+import java.util.*;
 class searchinsortedmatrix {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -13,29 +13,27 @@ class searchinsortedmatrix {
                 matrix[i][j] = scan.nextInt();
             }
         }
-        int i=0;
-        int j = column-1;
+        int i = 0;
+        int j = column - 1;
         int flag = 0;
-        while ((i<rows)&&(j>=0))
-        {
-            if(matrix[i][j] == key)
-            {
-                flag=1;
-                System.out.println(i+" "+j);
+        while ((i < rows) && (j >= 0)) {
+            if (matrix[i][j] == key) {
+                flag = 1;
+                System.out.println(i + " " + j);
                 break;
-            }
-            else if(matrix[i][j] > key)
-            {
+            } else if (matrix[i][j] > key) {
                 j--;
-            }
-            else
-            {
+            } else {
                 i++;
             }
         }
-        if(flag == 0)
-        {
+        if (flag == 0) {
             System.out.println("Not found");
         }
     }
 }
+
+/*
+Time Complexity : O(n^2)
+Space Complexity : O(n^2)
+*/

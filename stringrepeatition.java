@@ -1,3 +1,5 @@
+/* Repition of letters in a string*/
+
 import java.util.*;
 public class stringrepeatition{
     public static void main(String[] args) {
@@ -15,3 +17,8 @@ public class stringrepeatition{
 
     }
 }
+
+/*
+Input : giiithhhubb
+Output: github
+*/

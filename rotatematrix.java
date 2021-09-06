@@ -1,3 +1,6 @@
+/* Rotate matrix by 90 degree*/
+    
+
 package com.company;
 import java.util.*;
 public class rotatematrix {
@@ -48,3 +51,8 @@ public class rotatematrix {
         }
     }
 }
+
+/*
+Time Complexity : O(n^2)
+Space Complexity : O(n^2)
+*/

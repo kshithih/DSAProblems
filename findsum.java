@@ -1,4 +1,3 @@
-// { Driver Code Starts
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -25,7 +24,6 @@ class findsum {
 
 class Solutions {
     static boolean findsumans(int arr[], int n) {
-        //Your code here
         int sum = 0;
         HashSet<Integer> hs = new HashSet<Integer>();
         for (int i = 0; i < n; i++) {
@@ -44,3 +42,8 @@ class Solutions {
         return false;
     }
 }
+
+// Test case:
+// 5
+// 4 2 0 1 6
+// Yes

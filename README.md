@@ -1,2 +1,1 @@
-# LeetCode Solutions
-I upload solutions to Leet Code problems
+I upload various DSA problems I solve in a day.

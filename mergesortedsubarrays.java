@@ -1,21 +1,23 @@
+//Merging two sorted aubarrays arrayone and arraytwo
+
 import java.util.Scanner;
 
 public class mergesortedsubarrays {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        int[] A = new int[n];
+        int n = scan.nextInt();               //number of elements for array one
+        int[] A = new int[n];                 //arrayone
         for (int i = 0; i < n; i++) {
             A[i] = scan.nextInt();
         }
-        int m = scan.nextInt();
-        int[] B = new int[m];
+        int m = scan.nextInt();              //number of elements for array two
+        int[] B = new int[m];                //arraytwo
         for (int i = 0; i < m; i++) {
             B[i] = scan.nextInt();
         }
         int i = 0;
         int j = 0;
-        int[] ans = new int[A.length + B.length];
+        int[] ans = new int[A.length + B.length]; //output array
         int k = 0;
         while (i < A.length && j < B.length) {
             if (A[i] < B[j]) {

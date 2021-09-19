@@ -1,3 +1,5 @@
+//Sorting elements based on counting sort algorithm
+
 import java.util.Scanner;
 
 public class countingSort {

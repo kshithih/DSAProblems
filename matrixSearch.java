@@ -1,3 +1,8 @@
+// Given a matrix, check if the matrix contains a given key.
+// The matrix has the following properties:
+// Integer in each row is arranged in non-decreasing order from left to right.
+// The first integer in every row is greater than the last integer of the previous row.
+
 import java.util.Scanner;
 
 public class matrixSearch {

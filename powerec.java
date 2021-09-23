@@ -20,4 +20,5 @@ public class powerec {
     }
 
 }
-
+//Input : 3 4
+//Output: 81

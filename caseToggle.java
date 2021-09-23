@@ -27,3 +27,7 @@ public class caseToggle {
 
 }
 
+// Input: GithuB
+// Output: gITHUb
+
+

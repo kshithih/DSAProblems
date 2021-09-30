@@ -1,3 +1,10 @@
+// Count the number of co-prime pairs in an array. (Any two numbers whose GCD is 1 are be called as co-prime)
+// Input:
+// The first line contains an integer T, total number of elements. Then follow T elements.
+// Output:
+// Count the number of co-prime pairs in an array.
+
+
 import java.util.Scanner;
 
 public class coprimeswithone {

@@ -1,3 +1,12 @@
+// Finding the Sum of all Odd Frequency Elements in an Array
+// An array of integers is given as input and the sum of elements having odd frequency is found and produced as output. 
+// This means elements which repeat an odd number of times in the given array will be identified and the sum of these will be the expected output.
+// For example, consider an array arr = {1, 2, 4, 5, 6, 3, 1, 2, 3, 3}
+// Here, elements 1 and 2 repeats twice (even), whereas elements 4, 5, 6 are present only once (odd) and element 3 occurs thrice (odd). Hence,
+// Elements having odd frequency : {4, 5, 6, 3, 3, 3}
+// Sum of elements having odd frequency: 24
+
+
 import java.util.HashMap;
 import java.util.Scanner;
 

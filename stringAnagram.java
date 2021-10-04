@@ -1,3 +1,10 @@
+// Program to check if two strings are anagrams or not is discussed here. 
+// Two strings are given as input and those strings have to be checked if they are anagrams or not.
+// Anagram means that both strings contain the same character set, only their order is different. 
+// Therefore, in both strings, the frequency of each letter must be the same. For example, strings "act" and "cat" are anagrams.
+
+
+
 import java.util.HashMap;
 import java.util.Scanner;
 

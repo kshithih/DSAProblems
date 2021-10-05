@@ -1,3 +1,9 @@
+// Given a Linked List, an integer k and an element, add that element at the kth position of the linked list.
+// List: 1→3→4→7
+// k: 2
+// Element: 5
+// Result: 1→5→3→4→7
+
 import java.util.Scanner;
 
 class Node {

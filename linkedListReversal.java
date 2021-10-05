@@ -1,3 +1,8 @@
+// Given a linked list, reverse it.
+// Example:
+// Input:  1→2→3→4→NULL
+// Output:  4→3→2→1→NULL
+
 import java.util.Scanner;
 import java.util.Stack;
 

@@ -1,9 +1,16 @@
-// Don't place your source in a package
+// You are given a string SS consisting of NN lowercase letters of the English alphabet. Count the number of adjacent pairs of vowels.
+// In this problem, we consider there are 55 letters that represent vowels: a, e, i, o and u.
+// Standard input
+// The first line contains a single integer NN.
+// The second line contains the string SS.
+
+// Standard output
+// Print the answer on the first line.
+
 
 import java.util.HashSet;
 import java.util.Scanner;
 
-// Please name your class Main
 class adjacentVowels {
     public static void main(String[] args) throws java.lang.Exception {
         Scanner in = new Scanner(System.in);

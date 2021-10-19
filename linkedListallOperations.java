@@ -1,3 +1,26 @@
+/* All operations of Linked List are shown here.
+Input:
+addFirst
+10
+addLast
+20
+addLast
+30
+addLast
+56
+display
+10 20 30 56
+removeFirst
+display
+20 30 56
+removeLast
+display
+20 30
+getIndex
+20
+1
+*/
+
 import java.io.*;
 import java.util.*;
 

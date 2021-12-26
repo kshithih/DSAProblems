@@ -1,0 +1,48 @@
+/*This problem was asked by Stripe.
+Given an integer n, return the length of the longest consecutive run of 1s in its binary representation.
+For example, given 156, you should return 3.*/
+
+import java.util.*;
+
+public class longestConsecutiveOnes {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int  n = scan.nextInt();
+        int ans = isMonotonic(n);
+        System.out.println(ans);
+    }
+
+
+
+
+        public static int isMonotonic(int n ) {
+                // add your logic here
+            StringBuilder a = new StringBuilder();
+
+            while (n>0){
+                a.append(n%2);
+               n=n/2;
+
+
+
+           }
+            a.reverse();
+            int c= 0;
+            int maxi = Integer.MIN_VALUE;
+            a.toString();
+            for (int i=0;i<a.length();i++) {
+                if(a.charAt(i) == '1'){
+                    c++;
+                    maxi = Integer.max(maxi,c);
+                }else {
+                    c =0;
+                }
+            }
+            return maxi;
+        }
+    }
+
+
+
+
+

@@ -1,0 +1,47 @@
+/*Given an array of integers arr and two integers k and threshold, return the number of sub-arrays of size k and average greater than or equal to threshold.
+ Input: arr = [2,2,2,2,5,5,5,8], k = 3, threshold = 4
+Output: 3
+Explanation: Sub-arrays [2,5,5],[5,5,5] and [5,5,8] have averages 4, 5 and 6 respectively. All other sub-arrays of size 3 have averages less than 4 (the threshold).
+*/
+
+import java.util.Scanner;
+
+class slidingWindowProblem{
+    public static void main ( String[] args ) {
+        Scanner scan = new Scanner ( System.in );
+        int number_of_elements_in_array1 = scan.nextInt ( );
+        int[] array = new int[ number_of_elements_in_array1 ];
+
+        for ( int i = 0 ; i < number_of_elements_in_array1 ; i++ ) {
+            array[ i ] = scan.nextInt ( );
+        }
+        int k = scan.nextInt ( );
+        int threshold = scan.nextInt ( );
+        System.out.println (numberofSubarraymeetingCondition ( array , k , threshold ) );
+    }
+
+    public static int  numberofSubarraymeetingCondition( int[] nums , int k , int t ) {
+        int i = 0;
+        int j = 0;
+        int count = 0;
+        int average = 0;
+        int sum = 0;
+        while (j < nums.length) {
+            if (j - i + 1 < k) {
+                sum += nums[ j ];
+                j++;
+            } else if (j - i + 1 == k) {
+                sum += nums[ j ];
+                average = sum / k;
+                sum -= nums[ i ];
+                if (average >= t) {
+                    count++;
+                }
+                i++;
+                j++;
+            }
+        }
+        return count;
+    }
+}
+

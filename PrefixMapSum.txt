@@ -1,0 +1,39 @@
+/* Implement a PrefixMapSum class with the following methods:
+        insert(key: str, value: int): Set a given key's value in the map. If the key already exists, overwrite the value. 
+        sum(prefix: str): Return the sum of all values of keys that begin with a given prefix.*/
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+class Tester {
+    public static void main ( String[] args ) {
+        Scanner scan = new Scanner ( System.in );
+        int n = scan.nextInt ( );
+        HashMap<String, Integer> hm = new HashMap<> ( );
+        insert( n,hm );
+        System.out.println ("The sum of values whose key value starts with \"col\" " +" "+  sum(  n , hm ) );
+    }
+
+    public static void insert( int n ,  HashMap<String,Integer> hm  ) {
+        Scanner scan = new Scanner ( System.in );
+        for ( int i = 0 ; i < n ; i++ ) {
+            String key = scan.next ( );
+            int val = scan.nextInt ( );
+            hm.put ( key , val );
+        }
+        sum ( n , hm);
+    }
+    public static int sum( int n , HashMap<String,Integer> hm ) {
+        int sum = 0;
+        for (HashMap.Entry<String,Integer> entry : hm.entrySet()){
+                    String ans = entry.getKey ();
+                    if (ans.startsWith ( "col" )){
+                        System.out.println ("Key is "+ans +"    Value is  "+entry.getValue () );
+                        sum  +=   entry.getValue ();
+                    }
+        }
+       return sum;
+    }
+}
+

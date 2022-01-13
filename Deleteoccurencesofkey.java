@@ -1,3 +1,11 @@
+/*Given a linked list and a key, remove all occurrences of the key from the Linked List. Return the head of the resultant list.
+Input:
+LinkedList = 2->2->1->4->4
+x = 4
+Output: 
+3
+2 2 1 
+*/
 
 import java.util.*;
 class Node
